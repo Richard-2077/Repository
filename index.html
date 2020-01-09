@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>模板标记的学习</h1>
+    <p>{{ name }}</p>
+    <p>{{ users.0 }}</p>
+    <p>{{ users.1 }}</p>
+    <p>{{ user_dict.k1 }}</p>
+    <p>{{ user_dict.k2 }}</p>
+    <ul>
+        {% for item in users %}
+        <li>{{ item }}</li>
+    </ul>
+   {% endfor %}
+    <h1>循环</h1>
+    <table border="5">
+        {% for row in user_list_dict %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.email }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <table border="5">
+			<tr>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+			</tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+		</table>
+    <table border="5">
+			<tr>
+				<td>1</td>
+				<td>Alex</td>
+				<td>aaa</td>
+			</tr>
+            <tr>
+                <td>2</td>
+                <td>Alex2</td>
+                <td>bbb</td>
+            </tr>
+		</table>
+    <table borther="5">
+            <tr>
+                <td>1</td>
+                <td>Alex</td>
+                <td>aaa</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alex2</td>
+                <td>bbb</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Alex3</td>
+                <td>ccc</td>
+            </tr>
+    </table>
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Januaryqqqqqqqqqqqq</td>
+    <td>$100</td>
+  </tr>
+</table>
+</body>
+</html>
